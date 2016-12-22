@@ -1,0 +1,64 @@
+.navbar_custom {
+	background-color: white;
+	color:green;
+	border-radius:0;
+	font-weight: bold;
+}
+body {
+ 	padding-top:0px;
+ }
+
+p:first-letter {
+	color: black; 
+	font-size : 300%; 
+	font-weight : bold; 
+	float: left;
+	width: 1em; 
+	} 
+
+p:first-line { 
+	line-height: 2em;
+	 }
+
+ .imagem_grande {
+ 	position:relative;
+ 	background: no-repeat center center fixed rgba(0, 0, 0, 0.1);
+ 	height: 100%;
+ 	padding: 0px;
+ 	margin: 0px;
+ 	background-size: cover;
+ }
+
+  .titulo_pag {
+	text-align: center;
+
+  }
+ .titulo {
+ 	font-family: Arial;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	font-size: 375%;
+ }
+
+.linha_fina {
+	font-family: Arial;
+	font-size: 200%;
+	text-align: center;
+}
+ .backing {
+ 	background:#EDEDED;
+ 	border-radius: 20px;
+ 	margin:0px;
+ 	padding:0px;
+ 	font-size:125%;
+ 	font-family: Arial;	
+
+ }
+ 
+
+  .footer_meu {
+  	clear: both;
+  	text-align: center;
+  	font-family: Arial;
+
+  }
