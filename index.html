@@ -1,20 +1,78 @@
 <!Doctype>
 <html>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <head>
-	<title>meu primeiro layout com bootstrap</title>
+	<title>O grande C</title>
 	<link rel="stylesheet " href="mainbs.css"
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
 <!-- Optional theme -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-
+<meta property="og:url"           content="http://chaquente.com/ograndec" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="O grande C" />
+<meta property="og:description"   content="C de câncer. Uma em cada três pessoas no planeta será obrigada a lutar contra um tumor em algum momento da vida. Não preciso mais ter dúvidas. Em 2014, aos 31 anos, descobri um tumor no testículo. Essa é a história de como eu vivi o câncer." />
+<meta property="og:image"         content="http://www.chaquente.com/thebigC/wp-content/uploads/2014/09/CoreyArnold_TheNorthSea-1024x597.jpg" />
 </head>
 
 <body>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '1214941325199694',
+      xfbml      : true,
+      version    : 'v2.5'
+    });
+  };
 
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<script>window.twttr = (function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0],
+    t = window.twttr || {};
+  if (d.getElementById(id)) return t;
+  js = d.createElement(s);
+  js.id = id;
+  js.src = "https://platform.twitter.com/widgets.js";
+  fjs.parentNode.insertBefore(js, fjs);
+ 
+  t._e = [];
+  t.ready = function(f) {
+    t._e.push(f);
+  };
+ 
+  return t;
+}(document, "script", "twitter-wjs"));</script>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=1214941325199694";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 	<header>
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-68941724-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
 <nav class="navbar navbar_custom navbar-fixed-top" role="navigation">
   <div class="container-fluid">
@@ -32,23 +90,14 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-left">
-        <li class="active"><a href="#">A descoberta</a></li>
-        <li><a href="#">Na faca</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">A vida depois<span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li class="divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li class="divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
+        <li class="active"><a href="#descoberta">Um tumor</a></li>
+        <li><a href="#tratamento">Cirurgia e alta</a></li>
+        <li><a href="#de_volta">Aos olhos dos outros</a></li>
+        <li><a href="#vida_pos">A vida depois</a></li>
+        <li><a href="#falar">Por que falar?</a></li>
       </ul>
   <ul class="nav navbar-nav navbar-right">
-        <li class="active"><a href="#">Tem dúvidas se tem câncer?</a></li>
+        <li class="active"><a href="#tenho">Acha que está com câncer?</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
@@ -58,150 +107,312 @@
 
 	</header>
 
-<section class="imagem_grande"
-        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2014/11/grandeC_header.jpg')">
 
-</section>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2014/09/CoreyArnold_TheNorthSea-1024x597.jpg')">
+<div class="titulo_principal"> O grande C<br>___________<br> </div><div class="autoria"> Guilherme Felitti</div>
+</div>
 
-<div class="linha_fina">C de câncer. Estima-se que uma em cada três pessoas (uma a cada duas se considerarmos só os homens) será diagnosticada com algum câncer durante sua vida. Essa é a história do meu.</div>
+
+
+<div class="container">
+  <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
+<div class="col-xs-10 col-md-10"><br><br><br>
+<p class="linha_fina">
+C de câncer. Uma em cada três pessoas no planeta será obrigada a lutar contra um tumor na vida. Se considerarmos só os homens, é um a cada dois. A cada ano, o número de pacientes só cresce. Em 2012, eram 14,1 milhões. Em 2030, serão <a href="http://www.cancer.org/research/cancerfactsstatistics/global" target="_blank">21,7 milhões</a>. No ano passado, aos 31 anos, eu entrei para essa estatística ao descobrir um tumor no testículo.<br><br>Essa é a história de como eu vivi o câncer.<br>
+<div class="social">
+<div class="fb-share-button" data-href="http://chaquente.com/ograndec/" data-layout="button_count"></div>
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://chaquente.com/ograndec/" data-text="O grande C: como eu vivi um câncer aos 31 anos" data-via="gfelitti" data-lang="pt" data-related="gfelitti" data-hashtags="ograndec">Tweetar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+</div>
+</p>
+</div>
+<div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
+</div>
   <br><br><br>
+<a name="descoberta"></a>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/Corey-Arnold-Wolf-Tide-2large.2x-1024x706.jpg')">
+
+<div class="titulo_foto">Um tumor<br> </div>
+
+</div>
 
 <div class="container">
 	<div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
-<div class="col-xs-10 col-md-10 backing"><br>
-<h1 class="titulo">De quando o medo bate</h1><br><br>
+<div class="col-xs-10 col-md-10"><br>
 
-<p>
-Aorem ipsum dolor sit amet, ad sit tota autem, per simul salutandi no. Nec eirmod mandamus rationibus at, noster voluptua invidunt eam eu, minimum petentium posidonium ut his. Alii case in sed. Eleifend assentior an pri. Vix ne habemus vivendo facilisis, ea nam quod sint primis.
+<span class="letrao"> N</span><p class="backing">ão tem jeito bonito de começar a explicar: eu só percebi que algo não estava certo por uma coçada de saco. Estava lendo deitado na cama em uma quarta-feira à noite no começo de setembro quando, para me livrar de uma súbita coceira, percebi que meu testículo direito estava com uma textura lisa e dura, como se estivesse inchado. A diferença de um para outro era óbvia. Deitada ao meu lado na cama, minha mulher confirmou a diferença. Deixei um lembrete mental na cabeça: marcar médico. No dia seguinte, trabalhei normalmente e só voltei a lembrar do problema ao voltar pra casa, à noite. Escrevi “testículo liso e duro” na busca do Google. Todos os primeiros 150 resultados listavam câncer. Foi a primeira e última vez que busquei qualquer informação sobre o diagnóstico na internet. Desesperado, escrevi para meu chefe, dizendo que não iria no dia seguinte, uma sexta-feira. Acordei, liguei para o urologista que tinha me atendido alguns meses antes (no mesmo dia de Brasil x Colômbia, na Copa) e a secretária me informou que o próximo horário livre seria em duas semanas. Fui para a emergência do A.C. Camargo, conhecido popularmente como Hospital do Câncer. O primeiro médico confirmou que havia algo errado, com um exame rápido. Um ultrassom revelou que uma massa tinha tomado metade do meu testículo direito. "Pode ser câncer ou pode ser nada. Vai agora marcar consulta na semana que vem com o urologista", disse, já no fim do dia, a segunda médica, com menos de 1,50 metro de altura. Voltaria para a primeira consulta na quarta-feira seguinte. Enquanto ainda esperava ser atendido, meu pai ligou. Contei sobre a dúvida e que estava no Hospital do Câncer. “Poxa, mas logo no Hospital do Câncer?”, respondeu. Era a primeira reação de alguém da minha família à doença. Saímos de lá e fomos comer sushi no começo da noite, na Liberdade. O clima era leve. Apresentei meu pai ao toro, o atum com mais gordura e, por isso, mais saboroso.
+<br><br>
 
- Ea cum doming iriure. Prodesset interpretaris eam in, qui ad hinc esse assueverit. Nam eu petentium assentior voluptatibus, eam zril habemus principes ex. Vide idque dissentiunt ut pri, putant vocibus graecis in cum. Vix latine praesent adversarium ut, pro id modus postea delicatissimi.
 
- Ea exerci nemore mediocritatem vim. Mazim consul tempor an duo. Ea est natum oblique conclusionemque, eam an possit efficiendi, ridens constituam no has. Qui ut wisi habeo, sea ad scripserit accommodare, an pericula posidonium comprehensam sit. Nam adhuc percipit ad.
+A primeira coisa que notei no urologista que trataria meu câncer foi o sobrenome: Benigno. Cético convicto que sou, ri da ironia. Sentado à minha frente num dos consultórios pequenos do hospital, o médico me explicava pausadamente e sem tirar os olhos dos meus. “Guilherme, pode ficar tranquilo. O câncer masculino cujo tratamento mais avançou nas últimas décadas é o de testículo. É o câncer que eu escolheria se tivesse de ter um.” “Quer trocar, então, doutor?”, perguntei. Ele deu um sorriso e continuou. “A taxa de sobrevida hoje é além de 99%.” É um número que eu repetiria para mim mesmo nas semanas seguintes, como um mantra. Como os testículos formam um sistema redundante (ou seja: na falta de um, o outro assume todas as funções em nome dos dois), o procedimento básico era tirar antes de saber se era câncer ou não. Ele ainda não poderia cravar se era câncer, mas, numa metáfora felina, disse que “tinha bigode, miava e tomava leite”. “É por isso que a gente vai marcar a cirurgia agora.” Ficou para o dia 22, dezoito dias adiante. Aniversário da minha mulher. Ainda ensaiei um resmungo, abortado antes que minha boca produzisse qualquer som. Ela entenderia. Não fui eu quem escolheu. A cirurgia é simples, em uma semana você volta a andar normalmente, dá para escolher ou não uma prótese, a gente ainda não sabe se vai ter de fazer quimioterapia, radioterapia ou nenhuma das duas, fica tranquilo, não precisa se desesperar. Antes de ir, o médico me entregou um calhamaço de folhas. Para fazer a cirurgia, era necessário desenrolar os trâmites burocráticos do plano de saúde e fazer exames para saber se o tumor tinha ido para outras partes do corpo (a metástase), como estavam meus marcadores tumorais e se eu tinha saúde para aguentar anestesia. Saímos e encontramos minha mulher, sentada na sala de espera. Contei que provavelmente era câncer e que a cirurgia estava marcada para o dia do seu aniversário. Ela não demonstrou nenhum incômodo pela data da cirurgia e hoje, olhando para trás, me surpreendo como me preocupei com isso. Assustados, fomos jantar em uma pizzaria. O clima leve sumiu. 
+<br><br>
 
- In assum salutandi quo, vivendum necessitatibus cu est. Delenit democritum mediocritatem sit cu. Et sit dicat nostrum constituam, vulputate posidonium an per. Qui ex homero nonumy maluisset, ea sit dolorum vivendum mediocritatem. Usu quidam vidisse et. Mutat regione definitiones at eam, at iusto nemore similique eos.
 
- Oblique nominavi scribentur eum ne. Ius id epicuri deseruisse. Omnium numquam cu eum, an molestiae incorrupte vix, minim everti evertitur mel id. Cu aperiam interesset has, an nec dicat prodesset, duo dicam altera ne. Vis in apeirian accommodare, eos cibo mazim putant ei.
+Meu tratamento contra o câncer começou nesse dia. Nas semanas seguintes, eu reagiria, meio mecanicamente, à longa lista de tarefas envolvidas na preparação da cirurgia e no pós-operatório. Na sucessão entre documentos, exames e remédios, eu demorei dias até entender o porquê daquela necessidade de ser produtivo.
+<br><br>
 
- An posse ubique per, posse dictas ad eam. Expetenda voluptatibus necessitatibus ea nec, ipsum solet ex nam. Stet definitionem duo ad, aeque accusamus quo eu, te vim decore docendi imperdiet. Has etiam alienum petentium et, mutat aliquam ne nec, fugit definitiones nam ut. Illud mundi delicatissimi id his, porro necessitatibus te eos.
 
- At ius audiam option. Eripuit feugait nam ut, ea ignota indoctum deterruisset cum. Stet molestie ad vim, falli repudiandae vis id, id elit vulputate qui. Vim quodsi menandri complectitur ad. Est eu error ignota tritani, nec brute habemus id, an nec sint oportere liberavisse. Dolor accumsan theophrastus ius eu, nulla timeam evertitur duo ei.
+Um dia depois do hospital, fui ao trabalho pela última vez antes da licença. Conversei com o RH sobre o afastamento e a necessidade de tirar uma licença médica. Para tentar me acalmar, a funcionária, na tentativa de mostrar compaixão, explicou que alguns outros funcionários da empresa tinham passado por isso nos últimos anos. Meu chefe, atrasado para um almoço, pediu que eu o acompanhasse até o carro quando disse que precisávamos conversar. Após a alta, ele se desculpou pelo que considerou “uma falta de sensibilidade”. Avisei que provavelmente tinha um câncer, a cirurgia estava marcada e precisaria me afastar. Ele se assustou e garantiu todo o apoio. Tinha duas pautas na mão (uma grande, outra média). Outra jornalista entrou na reportagem grande para me ajudar a terminar. De casa, fiz as últimas entrevistas, passei o material para frente e esclareci dúvidas quando necessário. Em alguns dias, ia ao hospital fazer exames. Em uma das idas, um taxista perguntou se eu ia trabalhar. Disse a ele que iria operar. “Câncer é uma doença desgraçada mesmo. Eu tive um sobrinho que era saudável assim como você e ‘pegou’ um de testículo. Ele definhou na minha frente. Morreu em seis meses. Nunca esqueci o nome da doença. É difícil, mas foi tão chocante que decorei: <a href="http://www.accamargo.org.br/tudo-sobre-o-cancer/rabdomiossarcoma/35/" target="_blank"> rabdomiossarcoma</a>.” “Pois é, eu tenho suspeita de câncer de testículo.” Silêncio no táxi. “Moço, me desculpe. Eu achei que você era médico, que estava indo ao hospital para operar os outros.” Isso foi antes da metade do caminho. Ele ficou quieto até me deixar na porta do hospital. Quando desembarquei, falou uma última vez: “desculpa de novo, moço. Não vai ser nada, você vai ver”. Ele não podia dar essa garantia. Ninguém pode, na verdade. O que não impede as pessoas de falarem. Eu ouvi muitas, nos meses seguintes. Até hoje ouço.
+<br><br>
 
- Qui te phaedrum argumentum, partem semper perpetua et duo, maluisset honestatis duo at. Mei cu rebum accusata persecuti, nobis tincidunt comprehensam eos cu. Alia audire vim et, te case sententiae mel, an eos solum omittantur necessitatibus. Perpetua deseruisse an est.
 
- Inimicus perpetua cu cum, ea homero luptatum est, qui ea mundi ornatus patrioque. Mel diam rationibus cotidieque cu, blandit nominati periculis quo at. Mei ut solum modus nonumy. Pro an oratio urbanitas. Vis doctus equidem apeirian et, eum at altera integre ornatus. Id nam modus interpretaris, mel ne dicunt delenit, quaeque mentitum concludaturque at usu.
+A profissão de jornalista me permite entrar como observador em cenários aos quais, originalmente, não pertenço. Talvez esse distanciamento praticado quase diariamente no trabalho tenha me emprestado uma couraça nos primeiros dias dos exames. Eu estava lá, colhendo sangue e tirando raio X do pulmão, mas não era comigo. Não parecia de verdade. A ficha só caiu quando eu esperava minha primeira tomografia. Fiz um jejum além do pedido e estava nervoso quando o enfermeiro pediu que estendesse o braço para colocar o acesso, por uma agulha mais grossa que a usada para tirar sangue e, por isso, mais dolorida. Minha tensão, o jejum exagerado e a demora do enfermeiro fizeram minha pressão baixar. Uma enfermeira meteu um suco de caixinha na minha boca, para eu não desmaiar na sala de espera para tomos e ressonâncias magnéticas. Na minha frente, uma mulher na faixa dos 40 anos, careca, contava a uma senhora perto dos 70 que tinha vindo ao hospital só fazer uma consulta normal, mas que o médico a mandou internar. “Meu marido está indo para casa agora pegar minhas roupas.” Ela tivera câncer de fígado e tinha tido alta após a cirurgia e a quimio. Mas algo estava errado nos exames que o médico viu, e a tomo que faria depois de mim daria mais detalhes. Atenciosa, a senhora tentou animá-la, perguntando quando tinha sido a primeira internação. “Há seis meses.” “Olha, então você vai provar os novos pratos do hospital. Estão muito melhores. A comida melhorou muito.” Ela sabia, porque estava tratando um câncer na bexiga há dois meses. A única voz que se ouvia na sala de espera era a dessa senhora. Enquanto dois enfermeiros tentavam encontrar na mão dela uma veia que não estourasse a cada agulhada, ela fazia piada alto e gargalhava sozinha. Uma outra senhora, ainda mais velha e frágil, sofria em silêncio enquanto outro enfermeiro também tentava encontrar uma veia na sua mão esquerda, seca e transparente de tão branca. A cada agulhada infrutífera, a mulher magrinha se contorcia na cadeira. Ao lado dela, um senhor deitado na maca, com um ferimento horrendo exposto na cabeça, esperava quieto, olhando fixo para um ponto no infinito. Ao meu lado, em uma cadeira de rodas, outro senhor, com sobrancelhas muito peludas e um nariz pontudo como o das bruxas dos contos de fadas, puxou papo. Também enfrentava um câncer de fígado e, após ouvir sobre minha suspeita de câncer de testículo, defendeu que câncer era a melhor forma de morrer. “Você tem tempo para resolver tudo na sua vida.” Ao fundo, só se ouvia a primeira senhora, tagarelando enquanto tinha o dorso da mão furado. Foi quando me atingiu: ali, eu não era observador, mas parte. Ali, eu entendi que estava com câncer.
 
- Accumsan oportere ea sea. Has ex homero interesset vituperatoribus, cum an ferri zril. Vix eu reque aliquid appellantur, vis id malis forensibus consequuntur. Eum te justo altera, sit dicit oportere voluptatum no, esse scaevola efficiendi ea qui. Ullum appareat convenire an quo, ex usu possit utroque, an ius quem detraxit. Rebum nostro menandri mei no. Habeo error ea sea.
+<br><br>
+Na hora, assustei com a teoria do senhor do nariz de bruxa. Hoje, concordo 100%, principalmente depois de ler <a href="http://www.nytimes.com/2015/02/19/opinion/oliver-sacks-on-learning-he-has-terminal-cancer.html" target="_blank">o belíssimo relato do Oliver Sacks</a>ao saber que uma metástase reduziria sua vida a meses. 
+<br><br>
 
- Et integre evertitur sea. Eam natum scriptorem cu, te est integre alienum quaerendum. Singulis principes mea et, elit constituto eu nam, vel debet partem contentiones ad. His paulo singulis electram ne, movet vidisse definiebas eum ut. No his graece libris nominavi, quot iriure delectus ne cum. Pro quem liber cotidieque id, nec duis doming accusam id, nostrud intellegebat qui ne. Eu mel viris omittantur.
+Nos dias seguintes à tomografia, o que mais senti foi grande medo de morrer. Quando aparecia, eu repetia, como um mantra, que tinha 99% de chances de cura. Meu número da sorte virou 99. Ainda que os prognósticos fossem excelentes, sempre existe o medo da zebra. 1% é pouco, mas ainda existe. O medo não ia desaparecer (até hoje, nos controle, não desapareceu), mas aprendi a controlá-lo. Tudo ao meu alcance estava sendo feito. Defini duas regras para encarar meu câncer. Primeiro: eu ia viver a minha doença sem tentar anestesiar as dúvidas e os medos que ela provoca evocando curas que um deus dará, nem dramatizar, achar que o processo tem cores mais fortes que a realidade. Envolver essas certezas embrulhadas como mandingas ou tentar se colocar num cenário pior do que a realidade era deixar de vivenciar o processo na sua totalidade. Ia ter medo, ia ter dor, ia ter dúvida, ia ter alívio. Segundo: eu iria chorar, mas não na frente da minha família. Essa se mostrou a decisão mais acertada. Durante todo o processo, minha mulher e meus pais estavam em um estado constante de angústia, uma angústia que eu mesmo nunca senti durante toda a doença. Demonstrar calma, ainda que cheio de dúvidas, era acalmá-los por tabela. Só chorava no banho ou sozinho. Voltei para a terapia da qual havia tido alta cinco meses antes. Precisava de ajuda para processar as emoções. Rabisquei um testamento do pouco que tenho no mundo. A cirurgia era simples, mas sempre existe o risco de dar errado.
 
- Cum ex probo rationibus temporibus, nihil timeam ea vix, ea doctus appellantur mea. Nec at delenit scripserit, sit pertinacia rationibus at. Id dicant apeirian pri, ad graece salutandi philosophia vis, et harum animal copiosae pro. Eu mnesarchum eloquentiam quo, scripta detracto singulis et duo.
+<br><br>
 
- Cum in mollis voluptua. Vix zril praesent sadipscing ex, sit ea modo forensibus, copiosae cotidieque persequeris has te. Sanctus habemus ius no. Eros zril viderer ut duo, cu nulla aliquip atomorum has. Quo probo laudem rationibus ut, mei ei vero dolor dissentiunt, audire eligendi no mei. Vel ut tamquam efficiendi, qui te euismod nominati reprimique, et delenit erroribus torquatos nam.
+Com a possibilidade de quimioterapia e radioterapia não descartada até que se descobrisse o tipo de tumor, fui aconselhado a congelar esperma. Se meu câncer fosse o pior, a carga química ou radiológica empregada para destruí-lo me deixaria estéril por mais de um ano. Nada foi mais deprimente, durante o processo, que o esforço necessário para ter uma ereção fechado numa salinha com um sofá de plástico, Playboys da década de 90 e DVDs pornôs vendidos em bancas de jornal há mais de dez anos. Um paciente de câncer às vésperas da cirurgia (e você não precisa ser um para imaginar) não sente quase nenhum tesão. A expressão dos que estão esperando com você na recepção é sempre de desânimo e tristeza. É tão deprimente que não dá nem para sentir constrangimento. Você só quer que acabe o mais rápido possível. Mas a questão aqui não é prazer. A forma como a coleta é organizada torna o processo mecânico e repetitivo. São necessárias de três a quatro ejaculações para 1) os exames que vão garantir que você já não é estéril antes da cirurgia ou carrega alguma DST e 2) formar a quantia mínima necessária para que, em caso de inseminação artificial, no futuro, os médicos tenham espermatozoides suficientes para algumas tentativas. Entre cada coleta, três dias de abstinência sexual. 
 
- Ad malis perpetua argumentum usu. Utroque voluptatibus sit eu. Cu duo putant quodsi habemus. Et illum facete pertinax pri, et lorem exerci mel.
+<br><br>
+Dois anos antes, uma dermatologista usou (erroneamente, descobriria mais tarde) o termo “pré-câncer” para designar uma pinta retirada do meu braço. Eu pirei e mergulhei em um “intensivão” sobre câncer. Sosseguei quando levei meu caso (e minhas pintas extraídas, acondicionadas em potinhos de plástico) ao A.C. Camargo, onde uma dermatologista me explicou que nomear como “pré-câncer” uma pinta não é garantia de que ela se torne um tumor agressivo a qualquer momento. Existe o risco, explicou ela, que a tal pinta fique daquele jeito até o fim da vida, enquanto outra, escondida em uma dobra no sovaco e inexistente na época do exame, cresça mortalmente. Em meio à minha piração, encontrei o melhor livro já escrito sobre o assunto, <a href="https://en.wikipedia.org/wiki/The_Emperor_of_All_Maladies" target="_blank">O Imperador de Todos os Males</a>, no qual o médico Siddhartha Mukherjee traça uma “biografia” do câncer, desde a sua primeira descrição, feita pelo <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3997531/" target="_blank">médico e pesquisador egípcio Imhotep</a>, no século 27 AC, aos métodos mais recentes para tratá-lo. Vídeos como o do TED abaixo são ótimas introduções, mas o livro de Mukherjee é uma aula sobre câncer para quem não é médico por deixar claro, logo de cara, alguns dos pilares da doença. 1- Câncer é um mesmo nome para centenas de doenças diferentes. 2- Existem dos mais leves aos pesadíssimos. Sua sobrevida depende do tipo e do estágio no qual ele foi descoberto. Pegos no começo, quase 90% dos tumores são tratáveis. Por isso a importância de exames que possam detectá-lo quando ele ainda é inofensivo. O meu, um seminoma clássico bastante sensível à quimioterapia e ainda limitado à bolsa escrotal, praticamente puxa essa fila, pela altíssima chance de cura. A minoria é fatal, do tipo que vai reduzir a vida do paciente a meses mesmo se pego nas primeiras divisões celulares.<br><br>
 
- Solet equidem eos ad, nec esse contentiones ne. Vis ne omnis alterum reprehendunt, eum assum periculis disputando ad, suas discere evertitur ut his. No nec eruditi nonumes, senserit vituperatoribus ne cum. Odio modo appellantur no eos, per no epicuri insolens.
 
- Pro ad oratio aperiri, civibus constituto repudiandae eum te. Eam nibh detracto ullamcorper cu, in legere incorrupte reformidans usu, mel dolor tamquam alienum ei. Cu vis amet tota patrioque. Et legere intellegat quaerendum ius.
 
- No lorem repudiare nec, at qui habeo complectitur. Tacimates vituperata vix ea, principes dissentias ut mel, sint brute nec ad. Ne disputationi concludaturque quo, est rebum fuisset constituto cu. Duis fabulas mel an, pro ne aperiri veritus detracto. Est commodo alienum democritum an, ius id meis putant comprehensam. </p><br><br><br>
+<iframe width="853" height="480" src="https://www.youtube.com/embed/BmFEoCFDi-w" frameborder="0" allowfullscreen></iframe>
+<br><br>
+
+
+No imaginário popular, todos os cânceres parecem "imparáveis". A doença ainda projeta uma sombra tão grande que as gerações passadas, como a da minha avó, não gostavam nem de nomeá-la, como se pronunciar as duas sílabas atraísse. Fulano tinha “aquela doença”ou “o grande C”. Ter câncer, na cabeça de uns, era símbolo da ira divina, uma punição por um malfeito, uma mentalidade que enclausurou muito paciente no silêncio da vergonha e da culpa. Pior: essa mentalidade, que já ajudou a matar tanta gente, ainda não morreu.
+<br>
+</div>
+<div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
+</div>
+<a name="tratamento"></a>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/Corey-Arnold-FWEU-17large.2x-1024x708.jpg')">
+<div class="titulo_foto">Cirurgia e alta<br> </div>
+</div>
+<div class="container">
+  <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
+<div class="col-xs-10 col-md-10"><br>
+
+<span class="letrao">E</span><p class="backing">u, minha mulher e meu pai já estávamos no hospital dez minutos antes do combinado para a internação. Acordei perto das 6h, tomei um café da manhã, minha última refeição em quase 20 horas. Às 8 h, estava acomodado no quarto. Começaria aí uma espera de quase 12 horas, até subir para a sala de cirurgia. A previsão inicial era que os enfermeiros me buscariam perto das 14h, mas o atraso no complexo cirúrgico foi postergando o horário. O resto da minha família apareceu durante o dia e ficamos todos olhando para a parede, esperando o momento. Perto das 18h, o enfermeiro avisou que eu subiria. Tomei o pré-anestésico, um Dormonid, e deitei na maca. Beijei todos e o enfermeiro conduziu a maca até o elevador, por onde subi três andares e fui conduzido por um corredor até outro elevador, esse dedicado totalmente ao centro cirúrgico. Havia uma fila na porta do elevador, o que me permitiu ver o desfile de pacientes inconscientes ou grogues que desciam das suas cirurgias. Na nossa vez, o enfermeiro manobrou a maca para que minha cabeça ficasse colada à porta do elevador. Ele, logo ao lado, espremido entre a maca e a parede de metal, apertou o andar. Nem bem a porta tinha fechado e o elevador parou. Impaciente, o enfermeiro deu uma bufada e falou alto, com ninguém. “PORRA, MAS ENCRENCOU DE NOVO?”, ao que ele subiu em um apoio da maca e, com o corpo em cima do meu, deu três tapas fortes na porta. Com o Dormonid fazendo efeito, eu achei aquilo a coisa mais engraçada do mundo. Quando o elevador desencrencou e encrencou de novo dois andares acima, eu já gargalhava alto. No andar, o enfermeiro se espremeu entre a porta e a maca e, com os pés na frente, entrei no centro cirúrgico. A iluminação do lugar era amarelada, como se houvesse um filtro do Instagram em frente a tudo que eu enxergava. Entramos em uma salinha para esperar. O efeito do anestésico era tão forte que não conseguia mais erguer ou virar a cabeça, afundada no travesseiro. Só conseguia ver o teto, onde estavam as luminárias. A tampa de cada uma delas é feita de acrílico, o que confere um padrão irregular na parte interna facilmente visto de fora. Ao fixar o olhar na luminária, o padrão de acrílico passou a se mexer, como um caleidoscópio. Alguns segundos depois, apaguei.
+<br><br>
+<a data-flickr-embed="true" title="internacao"><img class="foto_centro" src="https://farm6.staticflickr.com/5759/22822322452_e3fe7673f9_k.jpg" width="95%" alt="internacao"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+<br><br>
+A cirurgia para tirar um tumor de testículo se chama orquiectomia (de <a href="http://www.etymonline.com/index.php?term=orchid" target="_blank">orkhis</a>, testículo em grego) e acontece, principalmente, na região inguinal (abaixo do abdomên, na linha da cueca/calcinha). Em vez de abrir o saco para retirar o testículo, é melhor tirá-lo por uma incisão entre o pênis e o umbigo, o que dá ao paciente uma cicatriz de cesárea caída para um lado do corpo. Há uma explicação lógica para isso: como o saco escrotal é fartamente vascularizado, as chances de células cancerígenas se desgarrarem do tumor no processo e invadirem a corrente sanguínea é maior. Já houve casos de operações feitas pelo saco que “provocaram” tumores em regiões incomuns, como a batata da perna. Por cima, o cirurgião puxa o testículo para fora sem apertá-lo muito, corta o cordão espermático, o tubo que leva o esperma do testículo para o pênis, coloca a prótese de silicone, amarra-a ao corpo com um fio de metal azul e fecha a incisão. Tudo dura entre 30 minutos e uma hora. O humorista Tom Green teve câncer de testículo e mostrou uma versão editada da sua cirurgia no programa que estrelava na MTV na década de 90. É para quem tem estômago - as cenas são fortes.<br><br>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/rRgzcHSNtKk" frameborder="0" allowfullscreen></iframe>
+<br><br>
+
+Uma hora depois de ver o acrílico do teto dançar, acordei no pós-operatório ao lado de uma mulher que gemia alto por morfina. A enfermeira me viu de cabeça levantada, perguntou como eu me sentia (bem) e avisou que a cirurgia tinha sido ótima e que minha mulher já tinha sido avisada. Fiquei ali outra hora até que a anestesia baixasse. A mulher que pedia morfina ainda pediu outras tantas vezes até que a enfermeira lhe desse, e ela se afundasse num torpor de onde só saíam umas respirações mais profundas, de alívio talvez. Na hora de descer para o quarto, o enfermeiro me manobrou para a entrada do centro cirúrgico e se afastou. Um médico que nunca tinha visto na vida, de cabelo loiro na altura do ombro e mochila nas costas, veio em minha direção oferecendo a mão para um cumprimento. “Sua cirurgia foi excelente, tudo que tinha para dar certo deu”. Balbuciei um “que ótimo” ainda grogue, ele me deu um tapa no ombro e foi embora. Até hoje não sei quem era. Voltei ao quarto depois da meia-noite. Mesmo com a anestesia ainda circulando no corpo e os remédios para diminuir a dor do corte que começava a cicatrizar, a única noite no hospital foi de cochilos entrecortados, não só pelas visitas de hora de hora das(os) enfermeiras(os). Estirada no sofá de plástico ao lado da cama, minha mulher também dormiu pouco. Às 6h, fui acordado para os primeiros remédios do dia, uma médica passou perto das 10h e, às 14h, recebi alta. A maior dor do processo veio aí: para deixar o acesso protegido na hora do banho, um enfermeiro teve a brilhante ideia de embrulhar metade do meu braço esquerdo com fita adesiva, das usadas para fechar caixas. Arrancar a fita doeu mais que a cirurgia e fui embora do hospital de braço depilado.  Antes de sair, as enfermeiras entregaram à minha mulher as receitas dos remédios (um para combater a dor e outro para impedir que o corpo rejeitasse a prótese) e me ensinaram como levantar e deitar. Meu primeiro retorno ficou marcado para dez dias depois, quando tiraria o curativo que cobria a cicatriz. Subir e descer degraus era muito difícil, e eu só conseguia vencê-los se me apoiasse nos braços de alguém. Ao chegar em casa e deitar, começava a rotina de recuperação que me deixaria como um bebê por uma semana.
+<br><br>
+<a data-flickr-embed="true" title="diaseguinte"><img class="foto_centro" src="https://farm6.staticflickr.com/5762/22647964670_4e398eaf26_h.jpg" width="100%" alt="o dia seguinte"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+
+<br><br>
+Você só nota o quanto usa os músculos inguinais diariamente quando um médico o rasga com um bisturi e o costura com um fio. São eles que “puxam” as pernas ou o tronco quando você precisa se levantar da cama, sentar em uma cadeira, agachar, dar um passo ou subir um degrau. Eles estão envolvidos não só em ações diretamente atreladas às pernas. Só consegui dar o primeiro espirro sem gemer de dor no quarto dia de recuperação. Com um corte tão recente, ainda vermelho e soltando de vez em quando bolhinhas de sangue, o paciente vira um bebezão e precisa de ajuda para qualquer atividade. Os dias passam entre a cama e o sofá. Assisti a filmes esquecidos na minha lista do Netflix. Acabei e comecei livros largados na estante. Desenferrujei e melhorei o pouco que sabia de HTML e CSS em cursos online. Fiz uma sessão de terapia por Skype - minha mulher saiu do quarto e apontei a câmera do laptop para a porta. Vi alguns jogos da Liga dos Campeões. Quase zerei minha lista do Pocket (quase). A grande diversão era, no fim da tarde, vestir uma roupa (a calça sempre de moletom, larga) e ir, a passos claudicantes e braço dado com minha mulher, até a padaria no fim da rua para tomar um sorvete. Ida e volta, a caminhada não tem 200 metros. A passada curta, um oferecimento da perna direita ainda insegura para dar apoio ao corpo e incapaz de dar passos que não distavam mais de um centímetro do chão, fazia do trecho um passeio de mais de meia hora. No quarto dia consegui deitar sozinho. No quinto, levantar. No sexto, caminhava pela casa quase normalmente e tomava banho sem precisar sentar num banquinho de plástico. O pior da recuperação foi ficar sem transar por um mês. Por envolver um órgão atrelado à sexualidade, a cabeça - inconscientemente, me explicaria a terapeuta - fica curiosa para atestar que tudo continuava funcionando igual após a cirurgia. O tesão pós-cirurgia é gigantesco.
+
+
+<br><br>
+
+Voltaria pela primeira vez ao hospital oito dias após a cirurgia para tirar o curativo. Era um procedimento simples, a ser feito na estação da enfermaria, não nos consultórios tradicionais. Estava deitado na maca, com uma enfermeira tirando cuidadosamente as finas tiras de curativo, ressecadas e quase descoladas após os banhos, quando Dr. Benigno entrou na sala de supetão. Nas mãos, trazia folhas de papel dobradas. Cumprimentou-me, abriu as folhas e disse, sem rodeio:
+
+<br><br><blockquote>
+
+ - Era câncer mesmo, do tipo seminoma, o mais simples. Mas estava tão no começo que não vai precisar nem de quimio nem de rádio. Estou te dando alta. Daqui a um mês você volta para fazer o primeiro controle.
+</blockquote>
+<p class="backing">
+A consulta onde eu saberia se precisaria continuar e como seria o resto do tratamento seria só na semana seguinte. Minha expectativa, nesse dia, era baixíssima. Estava claro que a visita seria simples: entrar, tirar o curativo, voltar para casa e esperar. A entrada-surpresa do médico na enfermaria, o comunicado direto da alta e aquele estado de parcimônia no qual me coloquei no começo do tratamento atrasaram minha capacidade cognitiva de entender o que ele tinha comunicado. Tecnicamente, a confirmação do diagnóstico e a alta do câncer foram seguidas, como se, nos registros do hospital para pacientes com câncer de testículo, minha doença tivesse durado apenas alguns segundos. O médico ainda me explicou como deveria fazer o controle (raio X, ressonância magnética e exame de sangue a cada três meses, nos dois primeiros anos), perguntou se eu tinha dúvidas (não) e saiu, a enfermeira logo atrás. Levantei da maca para vestir a calça enquanto minha mulher foi ao banheiro. Ao voltar, nos abraçamos e, com a cara afundada no meu peito, ela começou a chorar, primeiro de leve, depois aos soluços. Fora da enfermaria, contei sobre a alta ao meu pai, que esperava junto a outros pacientes. De novo, lágrimas de alívio. Fomos tomar um café para comemorar. Segurando uma xícara com expresso, meu pai nos contou que sua namorada seria internada na semana seguinte para tratar um câncer de mama.
+
+
+
+De volta à casa, almocei e sentei-me para escrever o seguinte e-mail, enviado a uma porção de amigos mais chegados que ainda não sabiam sobre a doença.
+
+<blockquote>
+
+Assunto: uma notícia boa depois de uma nem tão boa assim<br><br>
+
+
+
+<i>Meus caros,<br>
+
+
+
+estou escrevendo para contar sobre algo que está se desenrolando agora comigo. Há um mês, fui ao hospital por um incômodo e, após alguns exames, passei por uma cirurgia às pressas para retirada do testículo direito. O procedimento foi como esperado e já estou quase totalmente recuperado, ainda com um andar ponto e vírgula. Hoje saíram os resultados da biópsia: eu tinha um câncer de testículo do tipo seminoma, o mais popular e simples de tratar dos tumores da região. A boa notícia é que, como foi detectado num estágio muito inicial, ele não se espalhou pelo corpo. Só a cirurgia foi o suficiente para removê-lo com segurança, sem quimio ou radioterapia. Hoje eu tive a minha primeira alta. Pelos próximos dois anos, farei exames trimestrais para ver ele voltou ou não. A segunda e definitiva alta só ao fim deste processo. <br><br>
+
+
+
+Câncer de testículo é uma doença cuja origem exata ainda não se sabe, mas suspeita-se que ela nasça com você. Não é uma doença rara: quando comecei a falar sobre, descobri que muitos dos amigos/contatos conheciam alguém com um perfil próximo (homem branco, com 30 e poucos anos) que tinha passado pelo mesmo processo. (Aqui eu errei: a doença é rara, mas consegui encontrar 3 ou 4 casos ao meu redor.) Entre os cânceres da parte de baixo do homem, é o que mais evoluiu nos últimos anos em termos de tratamento. Se tivesse que escolher um câncer para ter, seria este, como disse meu médico no A. C. Camargo durante a primeira consulta (eu perguntei se ele queria trocar, mas ele declinou). As chances de cura para qualquer estágio da doença vão além dos 70%. Quando ele está no início e isolado (como o meu), fica entre 98% e 99%. Câncer nunca é boa notícia, mas, no contexto, as novidades de hoje são ótimas. Foi a melhor notícia de um ano já bastante movimentado e eu queria compartilhar com todos vocês. A vida continua.
+
+
+
+Beijos e abraços,
+</i>
+</blockquote>
+
+<p class="backing">
+Passei o resto do dia deitado no sofá olhando pela janela em silêncio e chorando de quando em quando, como se toda a minha energia tivesse se esvaído.
 
 </div>
 <div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
 </div>
 
-<section class="imagem_grande"
-        style="background-image: url('http://www.coreyfishes.com/koken/storage/cache/images/001/372/Corey-Arnold-Wolf-Tide-2,large.2x.jpg?1399258029')">
+<a name="de_volta"></a>
 
-</section>
-
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/Corey-Arnold-FWBS-9large.2x-1024x706.jpg')">
+<div class="titulo_foto">Aos olhos dos outros<br> </div>
+</div>
 
 <div class="container">
   <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
-<div class="col-xs-10 col-md-10 backing">
-<h1 class="titulo">O tratamento</h1>
-<p>
- 
- Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+<div class="col-xs-10 col-md-10"><br>
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
+<span class="letrao"> N</span><p class="backing">a cabeça de muita gente, descobrir um câncer é razão para uma mudança radical de vida, como vender tudo e comprar um barco para velejar pelo mundo. O que você entende como paciente é que, por mais que essa virada absoluta seja um plano válido, ela é rara. As mudanças que enfrentar um câncer causam na vida das pessoas são menores, mais artesanais, nada escandalosas. São mudanças de mentalidade ou ações que estão há anos sendo ensaiadas, sem coragem para serem tomadas. São correções de rota. A maioria dos pacientes de câncer com quem conversei manteve a vida, com essas alterações. Uma apressou o plano de engravidar, outro abandonou uma carreira brilhante em consultoria para trabalhar no setor social. Outros tantos mantiveram tudo igualzinho. Quando minha alta estava próxima de completar um ano, um empreendedor me recebeu para uma entrevista no setor oncológico de um hospital em São Paulo no último dia de quimio para combater uma leucemia agressiva. Mesmo durante o tratamento, a vida do sujeito quase não mudou.
+<br><br>
 
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+Anos antes de ser diagnosticado, escrevi sobre um jornalista que, após um diagnóstico errado de câncer, vendeu tudo, comprou um barco e <a href="http://epocanegocios.globo.com/Revista/Common/0,,EMI277464-16365,00-MEDICOS+FUI.html" target="_blank"> saiu velejando pelo mundo</a>, o tipo de virada que muita gente tem na cabeça quando cogita a possibilidade de ter alguma doença grave. Durante anos, a vida dele foi velejar com sua mulher e as duas filhas. Pelo Facebook, acompanhava as fotos maravilhosas da família pescando em Fiji ou do casal dando aulas para as meninas na cabine do barco. Na época, achei a história tão bonita que fiquei tentado a replicar a estratégia em um caso semelhante. Ainda assim, quando o câncer se confirmou, não pensei a sério em abandonar a vida que construí em momento nenhum. 
+Por que algumas pessoas mudam radicalmente, enquanto a maioria parece satisfeita com a vida que levava até o diagnóstico? Covardia? Não sei.
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+<br><br>
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
+Após a alta, o que mais queria era voltar ao trabalho. Avisei meu chefe da alta e que voltaria à redação assim que terminasse minha licença médica, dali a oito dias. Fui recebido por meus colegas com um bilhete assinado por todos e uma caixa de alfajores. A maioria não sabia o porquê do meu afastamento e reagiu com choque ao saber que tivera um câncer e que a alta tinha sido tão rápida. A volta à vida foi devagar. Em vez de táxi, preferi me arriscar no ônibus e no metrô, sempre atento para me afastar de tumultos, já que só imaginar uma cotovelada no saco já me arrepiava a alma de aflição, além dos motivos habituais. Durante dez dias, caminhei manco e com uma calça larga com o botão aberto, já que a cicatriz doeria se apertada. Em escadas, subia os degraus um por vez e apoiado no corrimão. 
+<br><br>
+Durante momento nenhum eu tive aquela conversa com o cosmos na qual o paciente, ainda enfrentando a fase da raiva que precede a tristeza avassaladora de se reconhecer como um raro escolhido entre milhares de ignorados, pergunta à entidade religiosa em que acredita “por que eu?”. “Por que eu?” é um pergunta inútil sob qualquer perspectiva. Pelo lado emocional, ela parece desengatilhar um processo de autocomiseração onde o paciente se vê traído pelo corpo ou, se o sujeito se apoia na fé, pela força maior que deveria cuidar dele. É uma seara perigosa. O paciente que se aventura por ali periga desancar em um arroubo dramático, absolutamente desnecessário durante um tratamento.  
+<br><br>
+Cientificamente, a pergunta não tem resposta, pelo menos no caso de câncer de testículo. Quando ainda estava no útero da minha mãe, uma célula do meu testículo direito foi formada com uma mutação que a faria, em algum momento, se multiplicar incessantemente. A célula mutante no embrião que virará um seminoma é a mesma que, a partir da puberdade, se transforma nos espermatozoides do paciente. Por que eu tive essa mutação? O que começou o processo de autorreplicação? Quando isso aconteceu? A ciência ainda não sabe. É sempre um bom lembrete de que a ciência já avançou muito, mas ainda há muito a desbravar: ainda não sabe com certeza o que causa um tipo específico de tumor. Se você tem dúvidas mais complexas sobre o assunto, a palestra do doutor Terence Friedlander, especialista na doença na Universidade da Califórnia, serão 84 minutos bem investidos.
+<br><br>
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/RJyvJO3nMLk?list=PLNaKD2MUawGRSMkHvFZQNOdz4s64RfgYO" frameborder="0" allowfullscreen></iframe>
+
+<br><br>
+
+Câncer como sinônimo de atestado de morte é algo ainda tão enraizado na cabeça das pessoas que a reação da maioria à frase “Eu tenho/tive câncer” é de perplexidade e horror. O cérebro de quem ouve parece congelar. Antes da alta, quando falava sobre o diagnóstico ou o tratamento, muita gente engolia em seco e esperava que eu fosse cair duro no chão em minutos. Até hoje, ao comentar o assunto com colegas de profissão ou desconhecidos, a reação mais comum é o susto. Eu reagi assim quando ouvi o falso diagnóstico da pinta no braço. De volta ao presente, conforme o tratamento do meu câncer avançava, ficava mais forte na minha cabeça a impressão de que a doença separa as pessoas em dois grupos: quem já teve contato e quem (ainda) não. São mundos separados por uma distância medida em anos-luz e há um jeito simples de identificar quem vem de qual: converse. A resposta te mostra quem é de qual mundo.
+
+<br><br>
+
+Avisei poucos amigos sobre o câncer antes da alta. A reação foi variada. Uns que eu jurava que estariam lá souberam e, em silêncio, se afastaram. Outros, dos quais não esperava nada, se dispuseram a ajudar em qualquer coisa. Gente muito racional apelou para mandingas. Um deles, graduação, mestrado fora do país e uma metralhadora de referências na mesa do bar, me sugeriu procurar um quiroprático. Foi ele, garantiu meu amigo, que salvou a vida de um professor seu também com tumor nos testículos. Outro, com quem não falava há anos, me explicou em detalhes como ele tinha encarado um câncer uma década antes e, durante minha recuperação pós-cirurgia, saiu do trabalho, passou na farmácia para comprar remédios e veio entregá-los em casa. O mais comum da minha experiência com a doença é encontrar gente que tenta te dar garantias, como o taxista cujo sobrinho morreu. Todas as garantias são cheques sem fundo. As pessoas falam que “já deu certo”, “já passou”, “não vai ser nada”, “não se preocupa” não só para te acalmar, mas também para que o papo acabe ali, sem tomar a desconfortável direção de abordar a morte. Falar sobre câncer é ter a mortalidade - que a gente reconhece, mas costuma ignorar - esfregada na cara. Nem todo mundo consegue e, misturada no caldo, a preocupação piora ainda mais a habilidade de interagir com o paciente. Ouvi alguns “já passou” de gente muito próxima. Não é maldade. As garantias são os atalhos de quem, incapaz de considerar a morte, sai rápido ou nem entra na conversa. Para o paciente de câncer ateu, que não se fia nas rezas ou nas promessas religiosas alheias (e também não deve se incomodar se alguém rezar trechos da Bíblia ou do Alcorão para pedir uma cura dentro da sua fé), cresce um sentimento de isolamento. É difícil encontrar alguém para conversar sobre a doença (desde que, obviamente, você esteja disposto a fazê-lo). 
+
+<br><br>
+Quem são as melhores pessoas para essa conversa? Ex-pacientes ou quem cuidou de alguém com a doença. Eles sabem o que é esse isolamento e consideram a possibilidade da morte, o que torna a interação muito mais profunda, ainda que você tenha conhecido o sujeito 30 minutos antes. Na angústia (passada ou corrente), cria-se um laço. Sou muito grato de ter três ou quatro amigos que já tiveram cânceres antes de mim com quem pude conversar com calma antes da cirurgia. Eles me explicaram os seus tumores, como reagiram ao diagnóstico e se recuperaram depois de operados, detalharam a rotina de exames à qual eu me submeteria pelo resto da vida e foram carinhosos até mesmo dando dicas para combater o enjoo em caso de quimio (dica: chupe gelo ou leve um limão, abra sulcos na casca com a unha e cheire). Eram conversas duras, porém sempre assertivas e com momentos de risada. Sempre achava que choraria ao fim dessas conversas, mas saía mais tranquilo. Não havia drama. A doença existia e todo o possível estava sendo feito para tratá-la. O “já passou” dava lugar ao “você aguenta”.
+
+</div>
+<div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
+</div>
+
+<a name="vida_pos"></a>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/Corey-Arnold-FWBS-37large.2x-1024x706.jpg')">
+<div class="titulo_foto">A vida depois<br> </div>
+</div>
+
+<div class="container">
+  <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
+<div class="col-xs-10 col-md-10">
+<span class="letrao"> U</span><p class="backing">m ano depois da alta, sei que o câncer me mudou em alguns aspectos, mas não sei precisar todos. Alguns são fáceis de perceber. Não tenho mais tanta paciência com quem não tem o que falar ou está claramente enrolando. Fiquei mais objetivo que antes. Quero acreditar que estou mais tolerante à maneira como amigos e familiares dos quais gosto agem e pensam, sem que uma discordância dificulte uma relação. Não sei se é pela idade ou pelo câncer. Certamente há outras mudanças que deverão ficar mais claras conforme esse câncer for se transformando em memória. Na parte prática, as mudanças são mais óbvias. Mudei minha alimentação após visitar uma nutricionista. Diminuí brutalmente o consumo de açúcar, da barra de chocolate ao usado no café, e álcool, com a exceção de raras taças de vinho. Passei a cozinhar em casa quase todos os dias, incluindo o pão do café da manhã. A maioria da massa e do arroz que como é integral. Descobri a dedicação para a academia que sempre lamentei não ter. Malho de quatro a cinco vezes por semana. Perdi sete quilos de gordura depois da cirurgia e ganhei sete quilos de músculo, um ano depois. 
+
+<br><br>
+
+A cada 90 dias eu volto ao médico para ver a quantas anda meu câncer. Se ele continua morto ou renasceu (o câncer é uma doença desgraçada, por ser traiçoeira). Os exames são moleza. O de sangue demora um minuto, e o raio x nem isso. Aguentar a sinfonia desafinada da ressonância magnética por 40 minutos é entediante, mas não chega a ser desconfortável. Você deita na maca, os enfermeiros colocam um “casco” sobre seu peito, como se fosse uma tartaruga de cabeça para baixo, amarram e você fica ali, entrando e saindo do grande tubo e prendendo a respiração quando pedem. É bom para organizar os pensamentos. Costumo montar a estrutura da reportagem que estou escrevendo durante o exame.
+
+<br><br>
+
+Com os exames em mãos, a consulta é rápida. Eu sento em frente ao médico, passo a sacola e ele vai abrindo envelopes, colocando radiografias no quadro luminoso e digitando no computador. Sangue ok, ressonância ok, raio x ok. A conversa é curta e o barulho é quase todo do papel sendo aberto e dobrado. Tudo somado, a consulta dura cravados 10 minutos. Eu saio e respiro aliviado. É rápido, mas não passa incólume. O problema não é durante, mas antes. Nos dez dias que costumam separar os exames da consulta, a cabeça de quem teve câncer vive num estado constante e crescente de ansiedade. É o que Xeni Jardin, do Boing Boing, chamou de <a href="http://boingboing.net/…/…/two-essays-on-scanxiety-or-ho.html" target="_blank"> “scanxiety” (uma junção entre scan and anxiety)</a> enquanto tratou um tumor de mama.
+
+<br><br>
+
+Você pode tentar se agarrar aos números (o câncer de testículo volta em 20% dos pacientes, uma outra forma de dizer que não volta em 80%), mas o alívio dura pouco. Aquela pilha de papel e raio x guardada numa sacolinha branca vai dizer se o câncer voltou ou não, o que cria um monstro na tua cabeça. A tal “scanxiety” toma qualquer espaço de tempo enquanto você trabalha, nada, malha, anda, conversa, dorme, transa, escreve e afins. É mais difícil se concentrar e você chora sem razão aparente. Na semana anterior à consulta eu trabalho mais pesado e vou quase todos os dias à academia para tentar não pensar nisso. 
+
+<br><br>
+
+Na maior parte do tempo, ter passado por um câncer não é um pensamento que fica na cabeça. Porque a rotina é a mesma de antes da doença nos intervalos de 90 dias entre os controles. Às vezes, eu “lembro” da experiência e parece que entendo melhor o que se passou, o que me assusta e emociona ao mesmo tempo (não entendo o porquê). A ficha vai caindo aos pouquinhos. Quando chega a hora de encarar os exames, eles funcionam como um lembrete da possibilidade (ainda que bastante pequena, no meu caso) da morte. Talvez esta seja a maior diferença emocional entre o antes e o depois do câncer: eu penso na morte, o que alterou completamente a forma como lido com o medo. O cagaço de morrer que eu sentia após o diagnóstico existe, mas vem diminuindo. 
+<br><br>
+<iframe width="900" height=70% frameborder="0" scrolling="no" src="https://plot.ly/~gfelitti/149.embed"></iframe>
+ <br><br>
+
+Câncer de testículo é raro e, quando aparece, mata menos que qualquer outro no mundo. Nos EUA, ele representa só <a href="http://seer.cancer.gov/statfacts/html/testis.html" target="_blank">0,5% dos novos casos de tumores</a>. No Brasil, é dez vezes mais: <a href="http://www2.inca.gov.br/wps/wcm/connect/tiposdecancer/site/home/testiculo" target="_blank"> 5% dos casos</a>. Em 2013, a estatística mais recente compilada pelo Instituto Nacional do Câncer (Inca), 343 brasileiros morreram da doença. É 70 vezes menos que o de pulmão, campeão de mortes no país com 24.490 óbitos. A lista dos tumores que mais matam no Brasil, segundo o Inca, segue com o colorretal (15.415), o de mama (14.388) e o de próstata (13.772). O de testículo é tão irrelevante que, em quase todos os levantamentos do Inca, os dados referentes à doença estão agregados na categoria Outros. Ainda que sejam a fonte mais séria e atualizada sobre mortes por câncer, esses dados não refletem totalmente o alcance da doença no Brasil, já que o Inca contabiliza majoritariamente dados do Sul e Sudeste.
+
+<br><br>
+
+O pouco que o câncer de testículo mata é quando o tumor “espalha” metástases no pulmão e no cérebro. Existem casos de pacientes que, após a primeira alta, pararam seus controles e, anos depois, voltaram ao hospital reclamando de falta de ar e/ou confusão mental, fruto de pequenos tumores nos pulmões e no cérebro. Mesmo nesses estágios, a morte não é a única saída. O exemplo mais célebre disso é o do ciclista Lance Armstrong, que descobriu um câncer de testículo com metástases no pulmão e no cérebro de um tumor que tinha deixado seu testículo do tamanho de uma laranja (calcule). Após uma quimioterapia experimental provocar a remissão da doença, teve alta, voltou a competir e fundou a Livestrong (não fosse o tumor de Armstrong, você não veria multidões usando a pulseirinha amarela perto dos anos 2000). O esporte, aliás, é cheio de exemplos de <a href="http://sports.espn.go.com/nhl/news/story?id=2699586" target="_blank">pacientes de câncer de testículo que voltaram</a>, triunfantes, às competições, após o tratamento. No basquete, houve o brasileiro Nenê. No futebol, <a href="http://news.bbc.co.uk/sport2/hi/football/teams/c/chelsea/4080945.stm" target="_blank">o holandês Robben</a>, <a href="http://globoesporte.globo.com/rs/futebol/noticia/2015/05/ex-inter-e-palmeiras-magrao-anuncia-aposentadoria-apos-cancer-e-doping.html" target="_blank">o brasileiro Magrão </a> e o meio-campista argentino Jonás Gutiérrez, que teve alta enquanto eu tratava o meu. Após dois anos de tratamento e algumas sessões de quimio, Gutiérrez teve alta e voltou a campo em abril, sob os aplausos de pé dos torcedores do Newcastle e do rival Liverpool. É uma cena (no vídeo abaixo) que me pega fundo. Em maio, no último jogo do campeonato, Gutiérrez <a href="https://www.youtube.com/watch?v=1tHqrty5hxo" target="_blank">marcou o gol</a> que impediu que seu time fosse rebaixado. Com o término da competição, o argentino <a href="http://espn.uol.com.br/noticia/514139_apos-vencer-cancer-e-salvar-clube-da-degola-jonas-gutierrez-e-dispensado-pelo-newcastle" target="_blank">foi dispensado</a>.<br><br>
+
+
+
+<iframe width="853" height="480" src="https://www.youtube.com/embed/PLpQdOqbZVE" frameborder="0" allowfullscreen></iframe>
+<br><br>
+
+
+Eu ainda não posso dizer que estou livre desse câncer. A segunda alta só vem depois de dois anos com exames limpos. Ainda me falta um ano de controle. A cada trimestre, a ansiedade volta menor. E note que usei o termo “desse”. Ninguém se livra de todos os cânceres ao se curar de um. O câncer é uma doença desgraçada pela sua resiliência.
+
+
+
  </p>
 
 </div>
 <div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
 </div>
 
-<section class="imagem_grande"
-        style="background-image: url('http://www.coreyfishes.com/koken/storage/cache/images/001/372/Corey-Arnold-Wolf-Tide-2,large.2x.jpg?1399258029')">
-
-</section>
-
-
+<a name="falar"></a>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/corey_falar.jpg')">
+<div class="titulo_foto">Por que falar?<br> </div>
+</div>
 <div class="container">
   <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
-<div class="col-xs-10 col-md-10 backing">
-<h1 class="titulo">O tratamento</h1>
-<p>
+<div class="col-xs-10 col-md-10"><br>
 
- Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+<span class="letrao"> T</span><p class="backing">enho plena consciência de que minha história com o câncer não representa a da maioria. Porque eu tive o câncer menos mortal de todos, descoberto ainda no primeiro estágio. Porque eu não enfrentei ciclos longos de quimioterapia. Porque moro a poucos quilômetros de um centro de referência em câncer na América Latina e tenho um plano de saúde que cobriu todos os gastos do tratamento. Porque minha família esteve do meu lado o tempo todo e meu empregador, na figura de dois chefes por quem tenho uma gratidão enorme, me apoiou totalmente. Porque eu já sabia mais ou menos o que é o câncer e o que fazer. Dos mais leves aos mais agressivos, todo diagnosticado entra em contato com o mundo do câncer. É uma realidade triste e dura, porém mais carinhosa do que parece de fora, e regida pelo silêncio.
+<br><br>
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
+Uma das primeiras conversas que tive sobre o câncer ao voltar do trabalho foi com um amigo jornalista. Sentamos para tomar um café e, por 20 minutos, ele me contou um drama pessoal pelo qual tinha passado no ano anterior, e como se acostumou a entrar e sair do hospital. Estranhamente, ao fim do relato dele entramos em um papo de assuntos irrelevantes. Até que ele tomou coragem e perguntou, claudicante e cheio de dedos: 
 
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+<i><blockquote>
+-- Você fala sobre seu câncer?
+</blockquote></i>
+<p class="backing">
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+Eu falava e continuo falando sobre sem cerimônia, mas aprendi que nem todo mundo escolheu (ou tem, não sei precisar) a mesma desenvoltura. O medo dele em perguntar (revisto tantas outras vezes em conversas com amigos, familiares e desconhecidos) é reflexo da dificuldade que temos em falar sobre o câncer. Não é só quem nunca teve proximidade com a doença, como quem me garantia, antes da operação, de que tudo já tinha dado certo. Há os ex-pacientes que, após a alta, preferem esquecer. O câncer se limita a uma experiência passada, como se o silêncio ao redor do assunto fosse uma garantia de que ele nunca voltaria. Achei que era um comportamento natural dos mais velhos, criados sob a sombra de “o grande C”, um momento no qual nomear a doença parecia atraí-la como um conto de terror infantil. Toda geração tende a se achar melhor que a anterior. Nesse quesito, eu achava. Mas errei. Dois meses antes do meu diagnóstico, um amigo do colégio passou pelo mesmo processo. Testículo inchado, visita despreocupada ao médico, diagnóstico de câncer, cirurgia de emergência, possibilidade de quimio. Mas quase ninguém soube. Ele escolheu viver a doença dele de uma forma mais íntima, sem “assumir” aos olhos do mundo. Quando descobri, mandei uma mensagem e estabeleci um canal de comunicação sempre usado quando um dos dois está prestes a fazer seu controle trimestral. Ele responde atencioso, mas parece não querer se alongar no assunto. Cada um lida com a própria doença do jeito que quer ou que pode. 
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
- </p>
+<br><br>Pelo caminho, fui descobrindo muita gente que já tinha se curado de um câncer, mas que parecia esconder o fato. Alguns confidenciavam a experiência como paciente em voz baixa, como se fosse um segredo. Não consigo não ver uma certa vergonha como motor desse comportamento, o que me parece inexplicável. Ninguém desenvolve câncer porque quer. Você pode assumir comportamentos arriscados e sair consumindo substâncias reconhecidamente carcinogênicas, mas nem isso garante um tumor. Uma vida regrada também não te blinda do contrário. O cigarro aumenta monstruosamente a chance de um tumor no pulmão, mas cerca de 20% dos tumores de pulmão <a href="http://www.cancer.org/cancer/news/features/why-lung-cancer-strikes-nonsmokers"target="_blank">ocorrem em não fumantes</a> (e essa estatística <a href="http://health.usnews.com/health-news/health-wellness/articles/2013/11/15/a-medical-mystery-why-is-lung-cancer-rising-among-nonsmoking-women" target="_blank">está crescendo</a>). É um jogo de chances, onde a aleatoriedade desempenha um papel importante. Sou incapaz de explicar por que muita gente ainda tem vergonha de dizer que tem ou teve câncer, como se a revelação do diagnóstico significasse também revelar uma falha de caráter ou confessar um pecado que justificasse a ira divina encarnada em um tumor entre as tripas. 
+
+<br><br>
+
+Cria-se um paradoxo: ainda que as chances de que qualquer um desenvolva a doença sejam altas (lembrando: estima-se que um terço da população mundial, em algum momento na vida, vai ter câncer. Se considerarmos só os homens, é a metade), fala-se muito pouco sobre. Todo mundo conhece alguém, próximo ou pela mídia, que sucumbiu ao câncer. 
+
+<br><br>
+
+Eu escolhi lidar de um jeito bastante vocal por ter percebido, durante minha experiência como paciente, que falar ajuda a desmistificar o câncer. Antes de entrar no A.C. Camargo para os primeiros exames, eu não tinha a menor ideia do que me esperava e tinha expectativas que, mais tarde percebi, eram muito piores que a realidade. O peso carregado pelo termo há décadas ainda é muito real, mesmo que tenha melhorado bastante em relação às gerações nascidas entre 1900 e 1960. Mas o pavor generalizado ainda existe. Segundo pesquisa feita pelo Datafolha a pedido do Instituto de Ciência, Tecnologia e Qualidade (ICTQ), o diagnóstico que <a href="http://revistagalileu.globo.com/Revista/noticia/2014/01/o-cancer-no-alvo-do-medo.html" target="_blank">76% dos brasileiros mais temem ouvir </a>é o de câncer. O medo é incompatível com a participação real do câncer entre os brasileiros que morrem por doença: 17%, atrás das doenças do aparelho circulatório, como derrame e infarto, diz <a href="http://www1.folha.uol.com.br/equilibrioesaude/2013/11/1377069-brasileiro-acha-que-cancer-mata-mais-que-infarto-e-avc.shtml" target="_blank">outra pesquisa do Datafolha</a>.
+
+<br><br>
+
+Relatar os exames, a interação com outros pacientes, os medos, as reações alheias, o impacto dos remédios no corpo e, principalmente, separar o que era real do que era paranoia motivada pelo medo de enfrentar uma doença ainda bastante temida (e nem sempre pelas razões corretas) pode ajudar curiosos ou futuros pacientes a entender o assunto. O câncer ainda é uma doença que mata muita gente e, por isso, deve ser temido. No Brasil, é a segunda causa de morte. Mas nem todo câncer é um atestado de morte. A maioria, na verdade, não é. Pode-se ter uma vida praticamente normal durante um tratamento.
+
+
+<br><br>
+Cada câncer é um câncer e nenhum é livre de angústia, dor, dúvida e tristeza. Mas basta o sofrimento encapsulado no tratamento. Aumentá-lo com medos exagerados não tem não só o menor sentido, como é um desperdício de energia vital para combater o tumor. Toda experiência como paciente é valiosa. Depois de tanta incerteza, deixá-la esquecida em uma região da memória seria um desperdício. Ela se torna mais útil exposta. Compartilhá-la pode ser uma forma de mostrar que o caminho adiante para novos pacientes não é tão tenebroso como a euforia alimentada pelo medo pode fazer parecer.
+
+
 
 </div>
 <div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
 </div>
 
-<section class="imagem_grande"
-        style="background-image: url('http://www.coreyfishes.com/koken/storage/cache/images/001/372/Corey-Arnold-Wolf-Tide-2,large.2x.jpg?1399258029')">
-
-</section>
-
+<a name="tenho"></a>
+<div class="imagem_grande image"
+        style="background-image: url('http://www.chaquente.com/thebigC/wp-content/uploads/2015/10/corey_rede.jpg')">
+<div class="titulo_foto">Você suspeita que tem câncer?<br> </div>
+</div>
 <div class="container">
   <div class="col-xs-1 col-md-1"> <!PRIMEIRA COLUNA></div>
-<div class="col-xs-10 col-md-10 backing">
-<h1 class="titulo">O tratamento</h1>
-<p>
- Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
+<div class="col-xs-10 col-md-10"><br>
+<span class="letrao">V</span><p class="backing">ocê achou esse site por ter buscado “testículo liso e duro” no Google e leu todo o texto ou simplesmente clicou no botão mais à direita da barra aí de cima. Se você tem os mesmos sintomas que eu tive, fique calmo. Pode ser câncer, mas também pode ser outra coisa. E se for realmente câncer, as chances de você sair desta vivo são esmagadoramente grandes. Mas você precisa se mexer. Pare de procurar diagnósticos online, desligue o computador, vá ao médico. É de madrugada? Vá amanhã. Se você está em São Paulo, corra pro A.C. Camargo, na Liberdade, ou pro ICESP, nas Clínicas. O primeiro aceita muitos planos de saúde e o segundo é público. Se você mora em outra cidade, corra pro pronto-socorro e fale sobre seu problema. Se for algo mais sério, vão te encaminhar para um urologista, que vai cuidar do seu problema. Se for câncer, o tratamento não vai te deixar broxa, eunuco ou sem tesão. Depois de ter alta do meu câncer, ouvi algumas histórias horrorosas de gente que viu que algo estava errado e, por vergonha, ficou quieto. Pode demorar anos ou meses, mas essa decisão - se for câncer mesmo que você tem no saco - vai te matar. Se tiverem de tirar uma bola sua, a outra consegue assumir todas as funções, sem o menor problema. Mas há algo muito importante a se entender: todo câncer é diferente. É preciso descobrir qual é o tipo de tumor para saber quais as chances. Por isso, fale. <br><br>
+O silêncio pode te matar.<br><br>
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
+Quer falar comigo? Estou no <a href="https://www.facebook.com/gfelitti" target="_blank">Facebook</a>, no <a href="https://www.twitter.com/gfelitti" target="_blank">Twitter </a>e no<a href="mailto:gfelitti@gmail.com" target="_blank"> email</a>.
 
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
 
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  Mei ei malorum legendos, ne duo doctus bonorum, has ea veri salutandi gubergren. In eos legendos efficiendi, platonem petentium cum in. Sea deleniti postulant ad, sea eu inani accommodare. Cu ceteros argumentum eum. At sit accusam definitionem, iriure complectitur mei id. Ut duo aeque dicit errem. Nec graece consequat te, ei mei recteque liberavisse accommodare.
-
- Ius ad fugit impetus mediocrem. Erant postea ocurreret his ad. Perpetua vituperatoribus vis eu, mel vide ridens ea. Dicta harum voluptaria vix ex, sea ne dicam libris, brute dictas vituperata te pro.
-  </p>
-
-</div>
-<div class="col-xs-1 col-md-1"><!TERCEIRA COLUNA></div>
-</div>
-
-<footer class="footer_meu"> feito por mim mesmo</footer>
+<footer class="footer_meu"> Texto e programação: Guilherme Felitti. As imagens que intercalam os capítulos são do <a href="http://www.coreyfishes.com/" target="_blank">fotógrafo e pescador norte-americano Corey Arnold</a>. Ele tem outras tão bonitas quanto no site dele. Agradeço à <a href="https://www.facebook.com/laiseugenia.rigotti?ref=br_rs" target="_blank">Laís Rigotti </a>pela revisão e ao <a href="https://twitter.com/caracciolo" target="_blank">Leandro Caracciolo </a>pela consultoria de CSS. </footer>
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>

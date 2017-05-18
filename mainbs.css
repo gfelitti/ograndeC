@@ -8,51 +8,105 @@ body {
  	padding-top:0px;
  }
 
-p:first-letter {
-	color: black; 
-	font-size : 300%; 
+ .letrao {
+ 	color: black; 
+	font-size : 850%; 
 	font-weight : bold; 
-	float: left;
-	width: 1em; 
-	} 
+ 	display:block;
+    float:left;
+    margin-left:7%;
+    padding-right: 8px;
+    height:1em;
+    margin-top:12px;
 
-p:first-line { 
-	line-height: 2em;
-	 }
+ } 
+ .image {
+ 	position: relative;
+
+ }
 
  .imagem_grande {
  	position:relative;
  	background: no-repeat center center fixed rgba(0, 0, 0, 0.1);
  	height: 100%;
+ 	width: 100%;
  	padding: 0px;
  	margin: 0px;
  	background-size: cover;
  }
+
+ .titulo_principal {
+ 	position: absolute;
+ 	top:82%;
+ 	text-align:center;
+ 	line-height:17px;
+ 	width:100%;
+ 	color:#FFF;
+ 	font-weight: bold;
+ 	font-size:100px !Important;
+
+ 	 }
+
+ .autoria {
+ 	position: absolute;
+ 	top:96%;
+ 	text-align:center;
+ 	line-height:17px;
+ 	width:100%;
+ 	color:#FFF;
+ 	font-size:33px !Important;
+ }
+.titulo_foto {
+ 	position: absolute;
+ 	top:95%;
+ 	text-align:center;
+ 	line-height:17px;
+ 	width:100%;
+ 	color:#FFF;
+ 	font-weight: bold;
+ 	font-size:80px !Important;
+
+ 	 }
 
   .titulo_pag {
 	text-align: center;
 
   }
  .titulo {
- 	font-family: Arial;
+ 	line-height: 1.75em;
+ 	font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;	
  	font-weight: bold;
  	text-align: center;
  	font-size: 375%;
  }
 
 .linha_fina {
-	font-family: Arial;
-	font-size: 200%;
+	line-height: 3em;
+ 	font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;	
+ 	font-size: 200%;
 	text-align: center;
+	text-shadow:0 0 1px transparent;
 }
- .backing {
- 	background:#EDEDED;
- 	border-radius: 20px;
- 	margin:0px;
- 	padding:0px;
- 	font-size:125%;
- 	font-family: Arial;	
 
+.linha_fina:first-letter {
+	color: black; 
+	font-size : 350%; 
+	font-weight : bold; 
+	float: left;
+	width: 1em; 
+ 	position:relative;
+	} 
+
+ .backing {
+ 	background:white;
+ 	border-radius: 20px;
+ 	margin:2.75em;
+ 	padding:0 1em;
+ 	font-size:135%;
+ 	line-height:1.75em;
+ 	text-align: justify;
+    font-family: 'Merriweather', Georgia, 'Times New Roman', Times, serif;	
+	text-shadow:0 0 1px transparent;
  }
  
 
@@ -61,4 +115,22 @@ p:first-line {
   	text-align: center;
   	font-family: Arial;
 
+  }
+ .social {
+ 	text-align: center;
+ }
+
+  .foto_esquerda {
+  	float:left;
+  	margin: 0px 7px 7px 0px;
+  	width: 20%;
+  }
+  .foto_direita {
+  	float:right;
+  	margin: 0px 0px 7px 7px;
+  	width: 20%;
+  }
+  .foto_centro {
+  	display:block;
+  	margin: 0 auto;
   }
